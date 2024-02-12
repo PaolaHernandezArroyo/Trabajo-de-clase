@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Paola Hernandez</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: #69f3be;
+            font-family:Arial, Helvetica, sans-serif;
+            color:rgb(255, 240, 242); /* esto es para el color de letra*/
+            text-align:  center;
+        }
+        .perfil{
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            background-color: rgb(184, 9, 184);
+            padding: 20px;
+            box-shadow: 0 0 10px black;
+        }
+        .foto-perfil{
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+    <div class="perfil">
+        <img src="C:\Users\Lab_02\Downloads\download.jpg" alt="Stich"
+        class="foto-perfil">
+        <h1 id="nombre">Nombre de perfil</h1>
+        <h3 id="especialidad">Especialidad del cetis</h3>
+        <h2>Gustos Personales</h2>
+        <ul>/*Con esto se crea una lista y el li es cada elemento*/</ul>
+        <li id="musica">Musica Favorita</li>
+        <li id="programas">Programas Favoritos</li>
+    </ul>
+    <h2>Informacion de Contacto</h2>
+    <p id="">Telefono</p>
+    <p id="">Correo</p>
+    <p id="">Biografia</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function()){
+            document.getElementById('nombre').textContent='Paola Hernandez';
+            document.getElementById('especialidad').textContent='Programacion';
+            document.getElementById('musica').textContent='Los Temerarios, Myke Towers, Ozuna';
+            document.getElementById('Programas').textContent='La rosa de guadalupe';
+            document.getElementById('Telefono').textContent='8992072207';
+            document.getElementById('Correo').textContent='Paolahernandez@gmail.com';
+            document.getElementById('Biografia').textContent='Naci en Reynosa Tamaulipas, me gusta escuchar musica y bailar';
+        }
+    </script>
+
+</body>
+</html>
